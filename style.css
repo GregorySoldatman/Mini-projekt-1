@@ -24,15 +24,15 @@ header > input {
     margin: 32px 0px;
     background-color: #386641;
     color: white;
+    padding: 8px;
 }
 
-main {
+main > h2 {
     text-align: center;
 }
 
 .karta {
     width: 400px;
-    text-align: start;
 }
 
 .karta > img {
@@ -47,6 +47,7 @@ main {
 .karta > input {
     background-color: #386641;
     color: white;
+    padding: 8px;
 }
 
 .cena {
@@ -58,6 +59,21 @@ main {
     font-weight: bold;
 }
 
-section {
+section > h2, section > p {
     text-align: center;
+}
+
+section > form > input[type=text] {
+    width: 100%;
+}
+
+section > form > input[type=button] {
+    background-color: #386641;
+    color: white;
+    padding: 8px;
+}
+
+footer {
+    text-align: center;
+    color: grey;
 }
