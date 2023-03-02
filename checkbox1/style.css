@@ -1,0 +1,71 @@
+.custom-checkbox {
+    user-select: none;
+}
+
+.custom-checkbox__clip {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .custom-checkbox__button {
+    background-color: #e63946;
+    box-shadow: 0.5px 0.5px 0px 0px #dedede;
+}
+
+.custom-checkbox input[type="checkbox"]:hover + .custom-checkbox__button {
+    border: 1px solid grey;
+    box-shadow: 0.5px 0.5px 0px 0px grey;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .custom-checkbox__button .custom-checkbox__clip {
+    animation: arrive .3s ease-out 0s 1 normal forwards;
+}
+
+.custom-checkbox__button {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #dedede;
+    border-radius: 25%;
+    position: relative;
+}
+
+.custom-checkbox__button .custom-checkbox__clip::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    height: 6px;
+    width: 1.5px;
+    background-color: white;
+    transform-origin: bottom center;
+    transform: rotate(-50deg);
+}
+
+.custom-checkbox__button .custom-checkbox__clip::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    height: 10px;
+    width: 1.5px;
+    background-color: white;
+    transform-origin: bottom center;
+    transform: rotate(40deg);
+}
+
+@keyframes arrive {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    100% {
+        translate: translateY(0%);
+        opacity: 1;
+    }
+}
