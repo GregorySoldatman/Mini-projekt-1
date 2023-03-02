@@ -38,6 +38,7 @@ form {
     padding: 24px;
     margin: 32px;
     border-radius: 8px;
+    box-shadow: 0 0 8px rgba(128, 128, 128, 0.5);
 }
 
 label {
@@ -59,15 +60,20 @@ label {
     max-width: 33%;
 }
 
+.wyjazdy {
+    margin: 48px auto;
+}
+
 .wyjazdy h2 {
     text-align: center;
+    margin-bottom: 48px;
 }
 
 .karta {
+    box-sizing: border-box;
     width: 400px;
     border-radius: 8px;
-    box-sizing: border-box;
-    box-shadow: 4px #dedede;
+    box-shadow: 0 0 8px rgba(128, 128, 128, 0.5);
 }
 
 .mail-list {
@@ -77,8 +83,8 @@ label {
     align-items: center;
 }
 
-.karta p, .karta h3, .karta input[type="button"] {
-    padding: 16px;
+.content {
+    padding: 0 16px;
 }
 
 .karta img {
@@ -113,7 +119,7 @@ form input {
     margin-bottom: 8px;
 }
 
-form input[type=text] {
+form input[type="text"] {
     width: 100%;
     height: 32px;
     font-family: 'Roboto', sans-serif;
@@ -123,20 +129,20 @@ form input[type=text] {
     border-radius: 4px;
 }
 
-form input[type=text]:focus {
-    border: 1px solid grey;
+form input[type="text"]:hover {
+    border: solid 1px grey;
 }
 
-input[type=button] {
+input[type="button"] {
     background-color: #386641;
     border: none;
     border-radius: 8px;
     color: white;
     padding: 8px;
-    margin: 8px 0;
+    margin: 8px auto;
 }
 
-input[type=button]:hover {
+input[type="button"]:hover {
     cursor: pointer;
 }
 
