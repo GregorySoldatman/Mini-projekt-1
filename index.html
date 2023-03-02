@@ -17,80 +17,96 @@
     <title>Wakacje last minute w okazyjnej cenie!</title>
 </head>
 <body>
-    <header>
-        <h1>WAKACYJNE WYJAZDY LAST MINUTE</h1>
-        Oderwij się od zabieganej codzienności i zażyj chwili spokoju w malowniczych zakątkach świata! 
-        Sprawdź dostępne wycieczki i skorzystaj z jednej z wielu okazji last minute. Pozwól sobie na odpoczynek!
-        <br>
-        <input type="button" value="SPRAWDŹ DOSTĘPNE WYJAZDY">
-    </header>
-    <main>
-        <h2>DOSTĘPNE WYJAZDY</h2>
-        <div class="karta">
-            <h3>Tropikalny relaks</h3>
-            <p>
-                06.03.2023 - 17.03.2023
-            </p>
-            <img src="./beach-g8644fc7cd_640.jpg" alt="plaża">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque maximus, enim ut molestie mollis, est arcu accumsan nisi, pulvinar pharetra arcu dui eu lacus. 
-            </p>
-            <p class="cena">
-                Od <span>689,00</span> zł/osobę
-            </p>
-            <input type="button" value="REZERWUJ MIEJSCE">
-        </div>
-        <div class="karta">
-            <h3>Górska przygoda</h3>
-            <p>
-                11.03.2023 - 19.03.2023
-            </p>
-            <img src="./lake-g63b9b0be0_640.jpg" alt="górskie jezioro">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque maximus, enim ut molestie mollis, est arcu accumsan nisi, pulvinar pharetra arcu dui eu lacus. 
-            </p>
-            <p class="cena">
-                Od <span>419,00</span> zł/osobę
-            </p>
-            <input type="button" value="REZERWUJ MIEJSCE">
-        </div>
-        <div class="karta">
-            <h3>Białe szaleństwo</h3>
-            <p>
-                01.03.2023 - 9.03.2023
-            </p>
-            <img src="./snow-ge35ec3574_640.jpg" alt="narty">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque maximus, enim ut molestie mollis, est arcu accumsan nisi, pulvinar pharetra arcu dui eu lacus.
-            </p>
-            <p class="cena">
-                Od <span>879,00</span> zł/osobę
-            </p>
-            <input type="button" value="REZERWUJ MIEJSCE">
-        </div>
-    </main>
-    <section>
-        <h2>SZUKASZ INNYCH WYJAZDÓW?</h2>
-        <p>
-            Nie znalazłeś wyjazdu w miejsce, w które chciałbyś jechać? Termin wycieczki Ci nie odpowiada? 
-            Zostaw nam swojego maila, a będziemy Cię informować o nowych ofertach w przyszłości!
-        </p>
-        <form action="#" method="post">
-            <label for="mail">Adres e-mail</label>
-            <input type="text" id="mail">
-            <label for="name">Imię i nazwisko</label>
-            <input type="text" id="name">
-            <input type="checkbox" id="rodo">
-            <label for="rodo">Wyrażam zgodę na przetwarzanie moich danych osobowych</label>
+    <div class="wrapper">
+        <header>
+            <h1>WAKACYJNE WYJAZDY LAST MINUTE</h1>
+            Oderwij się od zabieganej codzienności i zażyj chwili spokoju w malowniczych zakątkach świata! 
+            Sprawdź dostępne wycieczki i skorzystaj z jednej z wielu okazji last minute. Pozwól sobie na odpoczynek!
             <br>
-            <input type="button" value="INFORMUJ MNIE O NOWOŚCIACH">
-        </form>
-    </section>
+            <input type="button" value="SPRAWDŹ DOSTĘPNE WYJAZDY">
+        </header>
+    </div>
+    <div class="wrapper">
+        <div class="wyjazdy">
+            <h2>DOSTĘPNE WYJAZDY</h2>
+            <div class="flexbox">
+                <div class="column">
+                    <div class="karta">
+                        <h3>Tropikalny relaks</h3>
+                        <p>
+                            06.03.2023 - 17.03.2023
+                        </p>
+                        <img src="./beach-g8644fc7cd_640.jpg" alt="plaża">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Pellentesque maximus, enim ut molestie mollis, est arcu accumsan nisi, pulvinar pharetra arcu dui eu lacus. 
+                        </p>
+                        <p class="cena">
+                            Od <span>689,00</span> zł/osobę
+                        </p>
+                        <input type="button" value="REZERWUJ MIEJSCE">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="karta">
+                        <h3>Górska przygoda</h3>
+                        <p>
+                            11.03.2023 - 19.03.2023
+                        </p>
+                        <img src="./lake-g63b9b0be0_640.jpg" alt="górskie jezioro">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Pellentesque maximus, enim ut molestie mollis, est arcu accumsan nisi, pulvinar pharetra arcu dui eu lacus. 
+                        </p>
+                        <p class="cena">
+                            Od <span>419,00</span> zł/osobę
+                        </p>
+                        <input type="button" value="REZERWUJ MIEJSCE">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="karta">
+                        <h3>Białe szaleństwo</h3>
+                        <p>
+                            01.03.2023 - 9.03.2023
+                        </p>
+                        <img src="./snow-ge35ec3574_640.jpg" alt="narty">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Pellentesque maximus, enim ut molestie mollis, est arcu accumsan nisi, pulvinar pharetra arcu dui eu lacus.
+                        </p>
+                        <p class="cena">
+                            Od <span>879,00</span> zł/osobę
+                        </p>
+                        <input type="button" value="REZERWUJ MIEJSCE">
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+        <div class="wrapper">
+            <div class="mail-list">
+                <h2>SZUKASZ INNYCH WYJAZDÓW?</h2>
+                <p>
+                    Nie znalazłeś wyjazdu w miejsce, w które chciałbyś jechać? Termin wycieczki Ci nie odpowiada? 
+                    Zostaw nam swojego maila, a będziemy Cię informować o nowych ofertach w przyszłości!
+                </p>
+                <form action="#" method="post">
+                    <label for="mail">Adres e-mail</label>
+                    <input type="text" id="mail">
+                    <label for="name">Imię i nazwisko</label>
+                    <input type="text" id="name">
+                    <input type="checkbox" id="rodo">
+                    <label for="rodo">Wyrażam zgodę na przetwarzanie moich danych osobowych</label>
+                    <br>
+                    <input type="button" value="INFORMUJ MNIE O NOWOŚCIACH">
+                </form>
+            </div>
+        </div>
     <footer>
-        &#169; 2021 Last Minute Trips All Rights Reserved
+        <div class="wrapper">
+            &#169; 2021 Last Minute Trips All Rights Reserved
+        </div>
     </footer>
 </body>
 </html>

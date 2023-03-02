@@ -8,9 +8,11 @@ secondary: #e63946
 
 body {
     margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }
 
-body > * {
+body * {
     box-sizing: border-box;
 }
 
@@ -20,14 +22,29 @@ header {
     background-color: lightgrey;
 }
 
-header > input {
+header input {
     margin: 32px 0px;
     background-color: #386641;
     color: white;
     padding: 8px;
 }
 
-main > h2 {
+.wrapper {
+    max-width: 1200px;
+    margin: 0, auto;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    max-width: 33%;
+}
+
+.wyjazdy h2 {
     text-align: center;
 }
 
@@ -35,16 +52,16 @@ main > h2 {
     width: 400px;
 }
 
-.karta > img {
+.karta img {
     display: block;
     width: 100%;
 }
 
-.karta > h3 {
+.karta h3 {
     font-size: 1.5em;
 }
 
-.karta > input {
+.karta input {
     background-color: #386641;
     color: white;
     padding: 8px;
@@ -54,20 +71,20 @@ main > h2 {
     color: #e63946;
 }
 
-.cena > span {
+.cena span {
     font-size: 1.5em;
     font-weight: bold;
 }
 
-section > h2, section > p {
+.mail-list h2, .mail-list p {
     text-align: center;
 }
 
-section > form > input[type=text] {
+form input[type=text] {
     width: 100%;
 }
 
-section > form > input[type=button] {
+form input[type=button] {
     background-color: #386641;
     color: white;
     padding: 8px;
@@ -76,4 +93,11 @@ section > form > input[type=button] {
 footer {
     text-align: center;
     color: grey;
+}
+
+@media screen and (max-width: 650px) {
+
+    .column {
+        max-width: 100%;
+    }
 }
