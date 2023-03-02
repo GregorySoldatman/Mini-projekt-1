@@ -2,6 +2,8 @@
 primary: #386641 
 secondary: #e63946
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -19,7 +21,7 @@ body * {
 header {
     text-align: center;
     padding: 32px 0px;
-    background-color: lightgrey;
+    background-color: #ededed;
 }
 
 header input {
@@ -27,6 +29,18 @@ header input {
     background-color: #386641;
     color: white;
     padding: 8px;
+}
+
+form {
+    max-width: 550px;
+    background-color: white;
+    padding: 24px;
+    margin: 32px;
+    border-radius: 8px;
+}
+
+label {
+    user-select: none;
 }
 
 .wrapper {
@@ -37,7 +51,7 @@ header input {
 .flexbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .column {
@@ -50,6 +64,20 @@ header input {
 
 .karta {
     width: 400px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 4px #dedede;
+}
+
+.mail-list {
+    background-color: #dedede;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.karta p, .karta h3, .karta input[type="button"] {
+    padding: 16px;
 }
 
 .karta img {
@@ -80,14 +108,29 @@ header input {
     text-align: center;
 }
 
-form input[type=text] {
-    width: 100%;
+form input {
+    margin-bottom: 8px;
 }
 
-form input[type=button] {
+form input[type=text] {
+    width: 100%;
+    height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    padding: 4px;
+}
+
+input[type=button] {
     background-color: #386641;
+    border: none;
+    border-radius: 8px;
     color: white;
     padding: 8px;
+    margin: 8px 0;
+}
+
+input[type=button]:hover {
+    cursor: pointer;
 }
 
 footer {
@@ -96,7 +139,6 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
-
     .column {
         max-width: 100%;
     }
