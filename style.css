@@ -26,7 +26,7 @@ header {
     padding: 32px 0px;
 }
 
-header input {
+header button {
     margin: 32px 0px;
     background-color: #386641;
     color: white;
@@ -108,6 +108,7 @@ img {
 
 .karta h3 {
     font-size: 1.5em;
+    margin: auto;
 }
 
 .karta input {
@@ -127,9 +128,10 @@ img {
 
 .mail-list h2, .mail-list p {
     text-align: center;
+    margin: auto auto 16px auto;
 }
 
-form input {
+form input, form button {
     margin: 8px auto;
 }
 
@@ -147,19 +149,40 @@ form input[type="text"]:hover {
     border: solid 1px grey;
 }
 
-input[type="button"] {
+button {
     background-color: #386641;
+    position: relative;
     border: none;
     border-radius: 8px;
     color: white;
     padding: 8px;
+    overflow: hidden;
+    /* user-select: all; */
+}
+
+button::before {
+    content: "";
+    position: absolute;
+        top: 0;
+        left: -25%;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 100%;
+    width: 150%;
+    transform: scaleX(0) skewX(45deg);
+    transition: transform .5s ease;
+    will-change: tranform;
+    /* pointer-events: none; */
+}
+
+button:hover::before {
+    transform: scaleX(1) skewX(45deg);
 }
 
 header input {
     margin: 32px;
 }
 
-input[type="button"]:hover {
+button:hover {
     cursor: pointer;
 }
 
@@ -170,15 +193,31 @@ footer p {
     user-select: none;
 }
 
-input[type="button"]::before {
+/* header button::before, form button::before {
     content: "";
     display: block;
-    background-color: rgba(255, 255, 255, 0.4);
-    height: 400%;
-    width: 400%;
+    position: absolute;
+        top: -35px;
+        left: -90px;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 100px;
+    width: 400px;
+    transform: skewX(30deg) scaleX(0);
 }
 
-@media screen and (max-width: 650px) {
+.karta button::before {
+    content: "";
+    display: block;
+    position: absolute;
+        top: -35px;
+        left: -85px;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 100px;
+    width: 300px;
+    transform: skewX(30deg) scaleX(0);
+} */
+
+@media screen and (max-width: 750px) {
     .column {
         width: 100%;
     }
@@ -187,3 +226,12 @@ input[type="button"]::before {
         padding: 16px;
     }
 }
+/* 
+@keyframes button-animation {
+    0% {
+        transform: skewX(30deg) scaleX(0);
+    }
+    100% {
+        transform: skewX(30deg) scaleX(1);
+    }
+} */
